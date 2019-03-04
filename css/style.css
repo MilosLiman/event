@@ -10,10 +10,6 @@
 }
 
 body {
-	/*background: url("../img/cover-orgin.png");
-	background-size: auto;
-	background-repeat: no-repeat;*/
-	/*font-family: 'Zilla Slab', serif;*/
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 62.5%; /*definise globalno velicinu fonta */
@@ -81,9 +77,6 @@ li a {
 
 }
 
-/*.header {
-	padding-top: 0;
-}*/
 
 .logo {
 	float: left;
@@ -191,11 +184,6 @@ a:hover {
     }
 }
 
-/*.navUl {
-	margin: 0;
-	padding-left: 0;
-	list-style: none;
-}*/
 
 /*===================== DOGADJAJI ============================*/
 
