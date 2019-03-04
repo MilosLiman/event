@@ -1,24 +1,53 @@
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
 * {
     box-sizing: border-box; /*padding se nece dodadavati na celu sirinu vec na unutar*/
 }
 
 body {
-	/*background: url("cover-orgin.png");
-	background-size: cover;
+	/*background: url("../img/cover-orgin.png");
+	background-size: auto;
 	background-repeat: no-repeat;*/
-	font-family: 'Zilla Slab', serif;
+	/*font-family: 'Zilla Slab', serif;*/
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 62.5%; /*definise globalno velicinu fonta */
     font-weight: 300;
     color: #000;
     background-color: #f5e8f0;
+    height: 100%;
+
 
 }
 
-.glavni_naslov {
+/*===================== HEADER ============================*/
+
+
+.hero {
+	background: url("../img/cover-orgin.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+	height: 100%;
+
+}
+.main_title {
+	padding-top: 200px;
 	padding-bottom: 200px;
 }
 
-.glavni_naslov h1 {
+.main_title h1 {
 	font-size: 5em;
 	color: white;
 	font-weight: 600;
@@ -26,7 +55,7 @@ body {
 
 }
 
-.glavni_naslov h3 {
+.main_title h3 {
 	font-size: 2em;
 	color: white;
 	font-weight: 300;
@@ -52,46 +81,54 @@ li a {
 
 }
 
-.header {
+/*.header {
 	padding-top: 0;
-}
+}*/
 
 .logo {
-	position: fixed;
+	float: left;
+	margin: 5px;
+	position: relative;
 }
 
 .navbar {
 	display: table;
-	position: fixed;
-    top: 0;
-    left: 0;
+	/*position: fixed;*/
+	padding-top: 10px;
+	top: 0;
+	left: 0;
     width: 100%;
-    height: 100%;
+    height: 500px;
     text-align: center;
+
 }
 
+
 .navbar li {
-	display: inline;
+	display: inline-block;
 	float: right;
+	font-size: 1em;
 }
 
 .container {
     max-width: 1300px;
     padding: 0; 
     margin: 0 auto;
+    width: 100%;
 }
 
 a:hover {
 	color: #e11999;
 }
 
-.linijica {
+.line {
 	 border-left: 1.5px solid white;
 }
 
+
 /*--------BURGER-------????*/
 
-.close {
+/*.close {
     width: 45px;
     height: 45px;
     position: absolute;
@@ -129,7 +166,7 @@ a:hover {
 }
 .burger span:nth-child(1) {
     margin-top: 0;
-}
+}*/
 
 /*======================= MEDIA QUERY ============================*/
 
@@ -160,34 +197,58 @@ a:hover {
 	list-style: none;
 }*/
 
-/*=============== Dogadjaji ================*/
+/*===================== DOGADJAJI ============================*/
 
-.dogadjaji {
+.events {
 	background-color: #f2f2f2;
-	margin-left: -100%;
-	margin-right: -100%;
+/*	margin-left: -100%;
+	margin-right: -100%;*/
 }
 
 
-.naslov {
+.title {
 	font-size: 2em;
 	font-weight: 600;
 	text-align: center;
 	padding-top: 20px;
+	color: #333333;
 	
 }
 
 
-.pravUl li {
+/*.rectangular_ul li {
 	display: inline-block;
 	width: 30%;
 	margin: 15px;
 	background-color: white;
 	padding-bottom: 500px;
 
+}*/
+
+.rectangular {
+	display: flex;
+	text-align: center;
 }
 
-.pravManjiUl li {
+.announcement {
+	float: left;
+	width: 30%;
+	padding: 10px;
+}
+
+.rectangular::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.announcement img {
+		background-color: white;
+		padding-bottom: 500px;
+}
+
+
+.rectangular_uls li {
 	border: 1px solid red;
 	display: inline-block;
 	width: 20%;
@@ -200,7 +261,7 @@ a:hover {
 
 }
 
-.dogadjaji h3 {
+.events h3 {
 	text-decoration: underline;
 	font-size: 1.5em;
 }
@@ -217,13 +278,13 @@ a:hover {
 
 
 /*CITAT*/
-.citat {
+.quote {
 	background-color: #b42f84;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
-.citat h2 {
+.quote h2 {
 	text-align: center;
 	font-size: 2.8em;
 	font-weight: 400;
@@ -234,17 +295,120 @@ a:hover {
 
 /*===================== GALERIJA ============================*/
 
-.galerija {
+.galery {
 	background-color: #f2f2f2;
-	margin-left: -100%;
-	margin-right: -100%;
+/*	margin-left: -100%;
+	margin-right: -100%;*/
 }
 
 
-.skup_foto li {
-	display: inline-block;
-	  width: 20%;
-	  height: auto;
+.foto {
+  display: flex;
+}
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.foto::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*===================== FORMA ============================*/
+
+.form_main {
+	background-color: white;
+	height: 550px;
 
 }
+
+input, textarea {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.forms {
+  border-radius: 5px;
+  padding: 20px;
+  float: right;
+  width: 500px;
+
+}
+
+label {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.sub {
+  width: 100%;
+  background-color: #b42f84;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.7em;
+}
+
+.sub:hover {
+	background-color: #85135c;
+}
+.form_content {
+	padding: 60px;
+}
+
+.form_content h2 {
+	font-size: 4em;
+	font-weight: 600;
+}
+
+.form_content h3 {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+/*===================== SARADNICI ============================*/
+
+.associates_group {
+	text-align: center;
+
+}
+.col {
+		display: inline-block;
+		margin-top: 40px; 
+		padding: 50px;
+}
+
+
+/*===================== FOOTER ============================*/
+
+
+.footer {
+	width: 100%;
+	height: 50px;
+	background-color: #c464a2;
+}
+
+.foot_block{
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/*.cov {
+	background: url(../img/foot_cover.png);
+  	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  background-size: contain;
+}*/
