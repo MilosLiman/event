@@ -104,7 +104,7 @@ li a {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1350px;
     padding: 0; 
     margin: 0 auto;
     width: 100%;
@@ -191,8 +191,13 @@ a:hover {
 	background-color: #f2f2f2;
 /*	margin-left: -100%;
 	margin-right: -100%;*/
+	padding-bottom: 50px;
+
 }
 
+.sect_ev {
+	padding-bottom: 50px;
+}
 
 .title {
 	font-size: 2em;
@@ -215,13 +220,13 @@ a:hover {
 
 .rectangular {
 	display: flex;
-	text-align: center;
 }
 
 .announcement {
 	float: left;
-	width: 30%;
+	width: 33%;
 	padding: 10px;
+	margin: auto 1%;
 }
 
 .rectangular::after {
@@ -266,6 +271,10 @@ a:hover {
 
 
 /*CITAT*/
+
+.qq {
+	padding-bottom: 50px;
+}
 .quote {
 	background-color: #b42f84;
 	padding-top: 25px;
@@ -283,6 +292,9 @@ a:hover {
 
 /*===================== GALERIJA ============================*/
 
+.gall{
+	padding-bottom: 50px;
+}
 .galery {
 	background-color: #f2f2f2;
 /*	margin-left: -100%;
@@ -299,6 +311,7 @@ a:hover {
   width: 33.33%;
   padding: 10px;
 }
+
 
 .foto::after {
   content: "";
