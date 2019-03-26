@@ -118,6 +118,18 @@ a:hover {
 	 border-left: 1.5px solid white;
 }
 
+.announcement img {
+	vertical-align: bottom;
+}
+
+
+.text_ann{
+	background-color: white;
+	vertical-align: bottom;
+	padding: 10px;
+
+}
+
 
 /*--------BURGER-------????*/
 
@@ -189,8 +201,6 @@ a:hover {
 
 .events {
 	background-color: #f2f2f2;
-/*	margin-left: -100%;
-	margin-right: -100%;*/
 	padding-bottom: 50px;
 
 }
@@ -220,13 +230,12 @@ a:hover {
 
 .rectangular {
 	display: flex;
+    flex-direction: column;
 }
 
 .announcement {
-	float: left;
-	width: 33%;
-	padding: 10px;
-	margin: auto 1%;
+	padding: 20px;
+	margin: auto;
 }
 
 .rectangular::after {
@@ -237,17 +246,16 @@ a:hover {
 
 .announcement img {
 		background-color: white;
-		padding-bottom: 500px;
 }
 
 
-.rectangular_uls li {
+/*.rectangular_uls li {
 	border: 1px solid red;
 	display: inline-block;
 	width: 20%;
 	padding: 50px;
 	margin: 20px;
-}
+}*/
 
 .text_center {
 		text-align: center;
@@ -257,6 +265,22 @@ a:hover {
 .events h3 {
 	text-decoration: underline;
 	font-size: 1.5em;
+}
+
+/*radi kao cliping mask, sece sliku*/
+.event_img {
+	position: relative;
+	height: 0;
+	padding-bottom: 56.5%;
+	overflow: hidden;
+}
+
+/*absolute se ugleda na relative koji mu je kao parent*/
+.text_re {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .clearfix:before,
@@ -335,6 +359,8 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  border-radius: 5px;
+
 }
 
 .forms {
@@ -365,6 +391,11 @@ label {
 
 .sub:hover {
 	background-color: #85135c;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border-color: #b42f84;
 }
 .form_content {
 	padding: 60px;
