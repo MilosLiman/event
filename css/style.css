@@ -38,12 +38,13 @@ body {
 	height: 100%;
 
 }
-.main_title {
+
+/*.main_title {
 	padding-top: 200px;
 	padding-bottom: 200px;
-}
+}*/
 
-.main_title h1 {
+.hero h1 {
 	font-size: 5em;
 	color: white;
 	font-weight: 600;
@@ -51,7 +52,7 @@ body {
 
 }
 
-.main_title h3 {
+.hero p {
 	font-size: 2em;
 	color: white;
 	font-weight: 300;
@@ -103,22 +104,25 @@ li a {
 	font-size: 1em;
 }
 
-.container {
-    max-width: 1350px;
-    padding: 0; 
-    margin: 0 auto;
-    width: 100%;
+.container {  
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
 }
 
 a:hover {
 	color: #e11999;
 }
 
-.line {
+/*.line {
 	 border-left: 1.5px solid white;
-}
+}*/
 
-.announcement img {
+/*.announcement img {
 	vertical-align: bottom;
 }
 
@@ -128,7 +132,7 @@ a:hover {
 	vertical-align: bottom;
 	padding: 10px;
 
-}
+}*/
 
 
 /*--------BURGER-------????*/
@@ -176,10 +180,7 @@ a:hover {
 /*======================= MEDIA QUERY ============================*/
 
 @media only screen and (max-width: 768px ) {
-	body {
-		    background-color: lightblue;
-
-	}
+	
 
 	.burger,
     .close {
@@ -188,12 +189,50 @@ a:hover {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
+	
+	.rectangular {
+		width: 30%;
+	}
+
 
     .burger,
     .close {
     	display: none;
     }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	
+	.container{
+		min-width: 320px;
+	}
+
+	.hero {
+		position: relative;
+		width: 100%;
+	}
+
+	/*.form_main{
+		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+
+	.form_content {
+		position: absolute;
+	}
+
+	.form_labels {
+        width:95%;
+    }
+    .form_labels input[type=text], textarea {
+        width:75%;
+    }
+
+	.form_content img{
+		display: none;
+	}*/
 }
 
 
@@ -209,7 +248,7 @@ a:hover {
 	padding-bottom: 50px;
 }
 
-.title {
+h2 {
 	font-size: 2em;
 	font-weight: 600;
 	text-align: center;
@@ -219,43 +258,31 @@ a:hover {
 }
 
 
-/*.rectangular_ul li {
-	display: inline-block;
-	width: 30%;
-	margin: 15px;
-	background-color: white;
-	padding-bottom: 500px;
 
-}*/
-
-.rectangular {
+.upcoming {
 	display: flex;
     flex-direction: column;
 }
 
-.announcement {
+.img-wrap {
 	padding: 20px;
 	margin: auto;
 }
 
-.rectangular::after {
+.upcoming::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.announcement img {
+.img-wrap img {
 		background-color: white;
 }
 
 
-/*.rectangular_uls li {
-	border: 1px solid red;
-	display: inline-block;
-	width: 20%;
-	padding: 50px;
-	margin: 20px;
-}*/
+.upcoming-small ul{
+	list-style-type: none;
+}
 
 .text_center {
 		text-align: center;
@@ -268,7 +295,7 @@ a:hover {
 }
 
 /*radi kao cliping mask, sece sliku*/
-.event_img {
+.img-wrap {
 	position: relative;
 	height: 0;
 	padding-bottom: 56.5%;
@@ -277,10 +304,10 @@ a:hover {
 
 /*absolute se ugleda na relative koji mu je kao parent*/
 .text_re {
-	position: absolute;
+	/*position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 }
 
 .clearfix:before,
@@ -296,33 +323,30 @@ a:hover {
 
 /*CITAT*/
 
-.qq {
-	padding-bottom: 50px;
-}
 .quote {
 	background-color: #b42f84;
 	padding-top: 25px;
 	padding-bottom: 25px;
+
 }
 
-.quote h2 {
+blockquote h2 {
 	text-align: center;
 	font-size: 2.8em;
 	font-weight: 400;
 	color: white;
 	letter-spacing: 1px;
+	text-decoration: none;
 
 }
 
 /*===================== GALERIJA ============================*/
 
-.gall{
+.galery{
 	padding-bottom: 50px;
 }
 .galery {
 	background-color: #f2f2f2;
-/*	margin-left: -100%;
-	margin-right: -100%;*/
 }
 
 
@@ -330,7 +354,7 @@ a:hover {
   display: flex;
 }
 
-.column {
+.foto li {
   float: left;
   width: 33.33%;
   padding: 10px;
@@ -345,13 +369,18 @@ a:hover {
 
 /*===================== FORMA ============================*/
 
-.form_main {
-	background-color: white;
-	height: 550px;
+   .contact{
+		background-color: white;
+		position: relative;
+		text-align: left;
+		width: 100%;
+	}
 
-}
+   .forms {
+		position: absolute;
+	}
 
-input, textarea {
+  input, textarea {
   width: 100%;
   padding: 6px 12px;
   margin: 6px 0;
@@ -363,31 +392,35 @@ input, textarea {
 
 }
 
-.forms {
+  .forms {
   border-radius: 5px;
   padding: 20px;
   float: right;
-  width: 500px;
-
-}
-
-label {
-	font-size: 1.1em;
-	font-weight: 300;
-}
-
-.sub {
   width: 100%;
-  background-color: #b42f84;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 1.7em;
-}
+
+	}
+
+	label {
+	font-size: 1em;
+	font-weight: 300;
+	}
+
+	.form_content img{
+		display: none;
+	}
+
+	.sub {
+  		width: 100%;
+  		background-color: #b42f84;
+  		color: white;
+  		padding: 14px 20px;
+  		margin: 8px 0;
+  		border: none;
+  		border-radius: 4px;
+  		cursor: pointer;
+  		font-weight: 700;
+  		font-size: 1.7em;
+	}
 
 .sub:hover {
 	background-color: #85135c;
@@ -411,9 +444,13 @@ input:focus, textarea:focus {
 	font-weight: 300;
 }
 
+
+
+
+
 /*===================== SARADNICI ============================*/
 
-.associates_group {
+.associates {
 	text-align: center;
 
 }
@@ -443,4 +480,32 @@ input:focus, textarea:focus {
 	background: url(../img/foot_cover.png);
   	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   background-size: contain;
+}*/
+
+/*========================================*/
+
+/*.upcoming li {
+	background-color: white;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+}
+*/
+/*.upcoming-large li > h4 {
+	color: #000000;
+	font-weight: 700;
+	font-size: 1.4em;
+}*/
+
+/*.upcoming-large li > span {
+	color: #b42f84;
+	font-weight: 600;
+	font-size: 1.3em;
+	position: relative;
+	top: -20px;
+}*/
+
+/*.upcoming-large li > p {
+	position: relative;
+	top: -20px;
 }*/
