@@ -92,7 +92,7 @@ h2:after
     content:' ';
     display:block;
     border: 1px solid #751352;
-    margin: 7px 130px;
+    margin: 7px 140px;
 }
 
 h2 { 
@@ -347,6 +347,7 @@ nav li a {}
 	text-align: center;
 	background: url(../img/coverr.png) no-repeat top center;
 	background-size: 100% auto;
+	padding-bottom: 30px;
 }
 
 .upcoming ul{
@@ -865,7 +866,7 @@ h2:after{
 .upcoming-small li > span {
 	font-size: 1.3em;
 	display: inline;
-	padding-left: 110px;
+	padding-left: 120px;
 }
 
 .upcoming-small li > p {
@@ -1016,6 +1017,10 @@ h2:after{
 
 .upcoming-small {
 	margin: 10px;
+}
+
+.upcoming-small li > span {
+	padding-left: 150px;
 }
 
 
