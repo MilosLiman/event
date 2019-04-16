@@ -505,6 +505,45 @@ blockquote h3 {
 	padding: 0 50%;
 }
 
+/* Gallery Slick Slider */
+
+/* Section Gallery */
+.slider img { 
+    max-width: 100%; 
+}
+
+ /* Gallery Slick slider */
+.slick-dots {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding: 1rem 0;
+list-style-type: none; 
+}
+
+ .slick-dots li {
+    margin: 0 0.25rem; 
+}
+
+ .slick-dots button {
+    cursor: pointer;
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #000;
+    text-indent: -9999px;
+    outline: none; 
+}
+
+ .slick-dots li.slick-active button {
+    background-color: #26bdb3;
+    border: 2px solid #000;
+    transform: 0.3s all ease-out; 
+}
 
 .gallery img{
 	position: relative;

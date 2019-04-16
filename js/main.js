@@ -1,3 +1,4 @@
+/* Section Gallery - Slick Slider */
 $('.slider').slick({
     dots: true,
     autoplay: true,
