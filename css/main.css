@@ -116,6 +116,7 @@ section {
 	margin-bottom: 20px;
 }
 .container {
+	margin: 0 auto;
 	max-width: 1350px;
 	padding: 0 10px;
 }
@@ -549,7 +550,7 @@ list-style-type: none;
 	position: relative;
   	/*left: 30px;*/
   	/*width: calc(100% - 100px);*/
-  	/*padding: 5px;*/
+  	padding: 10px;
   	width: 100%;
   	height: auto;
   	text-align: center;
@@ -644,13 +645,13 @@ footer {
 
 .background-footer{
 	background-color: #751352;
-	padding-top: 12px;
+	padding-top: 15px;
 }
 
 footer i{
 	/*color: #b42f84;*/
 	color: white;
-	font-size: 1.5em;
+	font-size: 2em;
 	position: relative;
 	bottom: 6px;
 	padding-left: 3px;
@@ -792,7 +793,7 @@ blockquote h3{
 }
 
 footer i {
-	font-size: 2em;
+	font-size: 2.2em;
 	padding-left: 5px;
 }
 
@@ -989,7 +990,7 @@ blockquote h3{
 
 
 footer i {
-	font-size: 2em;
+	font-size: 2.5em;
 	padding-left: 5px;
 }
 
