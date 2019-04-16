@@ -116,7 +116,7 @@ section {
 	margin-bottom: 20px;
 }
 .container {
-	max-width: 1200px;
+	max-width: 1350px;
 	padding: 0 10px;
 }
 
@@ -488,6 +488,7 @@ nav li a {}
 	padding-bottom: 10px;
 	width: 100%;
 	margin-top: 30px;
+	display: inline-block;
 
 }
 
@@ -498,9 +499,9 @@ blockquote h3 {
 	letter-spacing: 1px;
 }
 
-blockquote img {
+.quote img {
 	color: white;
-	padding: 0 320px;
+	padding: 0 50%;
 }
 
 
@@ -665,9 +666,10 @@ nav li a{
 
 }
 
-nav li a:hover{
+.hov:hover{
 	color: #b42f84;
 }
+
 
 h2{
 	font-size: 2.5em;
@@ -800,11 +802,6 @@ nav ul li{
 nav li a{
 	color: white;
 	text-decoration: none;
-
-}
-
-nav li a:hover{
-	color: #b42f84;
 }
 
 h2{
@@ -881,11 +878,34 @@ h2:after{
 }
 
 .more{
-	font-size: 1.25em;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+.right{
+	float: right;
+	width: 50%;
+}
+
+.left{
+	float: left;
+	width: 50%;
+}
+
+.left img {
+	display: inline-block;
+}
+
+.contact{
+	background-color: white;
+	padding: 70px 0;
+	margin: 110px 0;
+	margin-bottom: 20px;
 }
 
 .left h2{
-	font-size: 2.5em;
+	font-size: 3.4em;
+	margin-top: 0px;
 }
 
 .left h3{
@@ -896,17 +916,13 @@ h2:after{
 	margin: 6px 355px;
 }
 
-blockquote img {
-	padding: 0 440px;
-}
-
 blockquote h3{
-	font-size: 2.2em;
+	font-size: 2.5em;
 }
 
 .left h2 {
-	font-size: 3em;
-	margin-top: 60px;
+	font-size: 3.4em;
+	margin-top: 0px;
 }
 
 .left h3 {
@@ -923,7 +939,6 @@ blockquote h3{
 
 .right button {
 	padding: 16px 30px;
-	margin: 20px 200px;
 	font-size: 1.8em;
 }
 
@@ -944,16 +959,66 @@ footer i {
 @media only screen and (min-width : 1200px) {
 
 	.hero h1 {
-		margin-top: 100px;
+		margin-top: 170px;
+		font-size: 4em;
+		margin-bottom: 0;
+}
+
+.hero p{
+	padding: 40px 270px;
+	font-size: 1.8em;
+}
+
+.logo img{
+	height: 70px;
+	padding: 5px 10px 10px 10px;
+}
+
+.burger-wrap{
+	display: none;
+}
+
+nav ul{
+	display: inline;
+	list-style-type: none;
+	color: red;
+	float: right;
+	font-size: 1.9em;
+	padding-right: 6px;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-right: 0px;
+}
+
+nav ul li{
+	display: inline;
+	padding-right: 3px;
+}
+
+nav li a{
+	color: white;
+	text-decoration: none;
+
+}
+
+h2{
+	font-size: 2.8em;
+	padding-top: 30px;
 }
 
 h2:after{
-	margin: 7px 500px;
+	margin: 7px 620px;
 }
 
-blockquote img{
-	padding: 0 490px;
+.upcoming-large {
+	margin: 10px;
 }
+
+.upcoming-small {
+	margin: 10px;
+}
+
+
 
 }
  /* ==========================================================================

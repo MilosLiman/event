@@ -34,11 +34,11 @@
 			  <label for="click"><span class="burger"></span></label>		
 			</div>		
 				<ul>
-					<li><a href="#events">Događaji</a></li>
-					<li><a href="" class="vertical-line">|</a></li>
-					<li><a href="#gallery">Galerija</a></li>
-					<li><a href="" class="vertical-line">|</a></li>
-					<li><a href="#contact">Kontakt</a></li>
+					<li><a class="hov" href="#events">Događaji</a></li>
+					<li><a class="vertical-line">|</a></li>
+					<li><a class="hov" href="#gallery">Galerija</a></li>
+					<li><a class="vertical-line">|</a></li>
+					<li><a class="hov" href="#contact">Kontakt</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -135,7 +135,7 @@
 		</div>
 	</section>
 	<section class="contact" id="contact">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="left">
 				<h2>Organizujete događaj?</h2>
 				<h3>Ispunite naš kratki formular i budite sigurni da će ljudi u okruženju biti obavešteni.</h3>
@@ -143,13 +143,13 @@
 			</div>
 			<form class="right">
 				<label for="name">Ime i prezime</label>
-					<input type="text" name="name">
+					<input type="text" name="name" required>
 				<label for="email">Email</label>
-					<input type="email" name="email">
+					<input type="email" name="email" required>
 				<label for="name">Naziv događaja</label>
-					<input type="title" name="name">
+					<input type="title" name="name" required>
 				<label for="link">Link na sajt</label>
-					<input type="link" name="name">
+					<input type="link" name="name" required>
 				<label for="description">Vaša poruka</label>
 					<textarea rows="10" cols="30" name="comment" ></textarea>
 				<button type="submit" class="sub" name="inform" value="Sumbmit">Pošalji</button>
