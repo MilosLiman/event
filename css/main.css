@@ -602,6 +602,7 @@ list-style-type: none;
 	padding: 7px;
 	margin: 4px 0px;
 	width: 100%;
+	resize: none;
 }
 
 .right button{
